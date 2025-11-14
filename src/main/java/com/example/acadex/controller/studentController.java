@@ -2,18 +2,17 @@ package com.example.acadex.controller;
 
 import com.example.acadex.model.Student;
 import com.example.acadex.service.StudentService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @CrossOrigin(origins = "http://localhost:8080")
 @RestController
 @RequestMapping("/api/students")
-public class StudentController {
+public class studentController {
 
     private final StudentService service;
 
-    public StudentController(StudentService service) {
+    public studentController(StudentService service) {
         this.service = service;
     }
 
